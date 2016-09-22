@@ -1,19 +1,48 @@
 .site-header
   color: $accent
 
-  a:hover
-    text-decoration: none
-
   h1
-    font-size: 1em
+    font-size: 2em
     margin: 0px
     font-family: $accent-font
 
 .home
   display: flex
+  flex-wrap: wrap
+  justify-content: space-between
 
   .recipe
+    width: 12 * $base-spacing
+
     .image
-      height: 100px
+      height: 200px
       background-size: cover
-      background-position: 50% 50%;
+      background-position: 50% 50%
+      border-radius: 5px
+      margin-bottom: $base-spacing
+
+    .title
+      margin-top: 0
+      margin-bottom: $base-spacing
+
+    &:first-child
+      border-bottom: 2px dashed $light-gray
+      margin-bottom: 2 * $base-spacing
+      padding-bottom: 2 * $base-spacing
+      width: 100%
+
+      a
+        display: flex
+
+        .title
+          font-size: 2em
+          margin-bottom: 1.5 * $base-spacing
+
+        .image
+          width: 20 * $base-spacing
+          height: 10 * $base-spacing
+          margin-right: 2 * $base-spacing
+          margin-bottom: 0
+
+
+

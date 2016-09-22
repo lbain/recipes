@@ -1,17 +1,23 @@
-
-
 body
-  background: $white
-  font-family: $content-font
-  color: $dark-gray
-  font-size: 20px
   -webkit-font-smoothing:  antialiased
+  background: $white
+  color: $dark-gray
+  font-family: $content-font
+  font-size: 20px
+  margin: 0 auto
+  max-width: 800px
+  @include respond(medium)
+    margin: 20px
+  @include respond(small)
+    margin: 0
+
+header
+  margin-bottom: 2 * $base-spacing
+  margin-top: 2 * $base-spacing
 
 a
   color: $accent
   text-decoration: none
-  &:hover
-    text-decoration: underline
 
 b, strong, bold
   font-weight: $bold
@@ -19,6 +25,7 @@ b, strong, bold
 p
   margin-bottom: 0.8em
   line-height: 1.6em
+  color: $dark-gray
 
 h1, h2, h3, h4
   font-family: $title-font
@@ -70,11 +77,3 @@ blockquote
     page-break-before: always
   a
     text-decoration: underline
-
-#main
-  margin: 0 auto
-  max-width: 800px
-  @include respond(medium)
-    margin: 20px
-  @include respond(small)
-    margin: 0
