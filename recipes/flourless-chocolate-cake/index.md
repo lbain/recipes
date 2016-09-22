@@ -1,7 +1,8 @@
 ---
+title: Flourless Chocolate Cake
+image: pic.jpg
+description: Delicious, rich, and full of flavour
 ---
-
-# Flourless Chocolate Cake
 
 ## Ingredients
 * 4 (1 ounce) squares semisweet chocolate, chopped

@@ -1,0 +1,11 @@
+<div class="recipe">
+  <a href="{{ recipe.url | prepend: site.baseurl }}">
+    <h2>
+      {{ recipe.title | escape }}
+    </h2>
+  </a>
+
+  <div class="image" style="background-image: url('{{ recipe.dir }}{{ recipe.image }}')"></div>
+
+  <p>{{ recipe.description }}</p>
+</div>
