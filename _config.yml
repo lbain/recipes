@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Lucy's Kitchen
 description: A collection of recipes I've made and updated
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/recipes" # the subpath of your site, e.g. /blog
 # url: "localhost:4000" # the base hostname & protocol for your site
 url: http://localhost:4000
 

@@ -1,6 +1,6 @@
 <div class="recipe">
-  <a href="{{ recipe.url | prepend: site.baseurl }}">
-    <div class="image" style="background-image: url('{{ recipe.dir }}{{ recipe.image }}')"></div>
+  <a href="{{ site.baseurl }}{{ recipe.url }}">
+    <div class="image" style="background-image: url('{{ site.baseurl }}{{ recipe.dir }}{{ recipe.image }}')"></div>
 
     <div class="info">
       <h3 class="title">
